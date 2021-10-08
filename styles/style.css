@@ -7,26 +7,29 @@ body, h1, h2, h3, h4, h5, h6, p {
 }
 
 body {
-    background-color: #444444;
     font-family: 'Poppins', sans-serif;
     -webkit-font-smoothing: antialiased;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 * {
     box-sizing: border-box;
 }
 
-main {
+.card {
+    border-radius: 1em;
+    overflow: hidden;
+    background-color: #444444;
     display: flex;
-    height: 100vh;
-}
-
-section, div {
-    /*border: 1px solid silver;*/
+    width: 1200px;
+    height: 650px;
 }
 
 .preview {
-    width: 25%;
+    width: 33.3%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,11 +37,11 @@ section, div {
 }
 
 .preview__image {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     background: url("../images/img.png") center / cover;
     border-radius: 50%;
-    margin-top: 150px;
+    margin-top: 80px;
     -webkit-box-shadow: 5px 5px 2px 2px rgba(94, 94, 94, 1);
     -moz-box-shadow: 5px 5px 2px 2px rgba(94, 94, 94, 1);
     box-shadow: 5px 5px 2px 2px rgba(94, 94, 94, 1);
@@ -46,11 +49,11 @@ section, div {
 
 .preview__header {
     margin-top: 15px;
-    font-size: 30px;
+    font-size: 42px;
 }
 
 .preview__text {
-    margin-top: 10px;
+    font-size: 20px;
 }
 
 .social {
@@ -63,7 +66,7 @@ section, div {
 .social__item {
     width: 25px;
     height: 25px;
-    margin: 0 10px;
+    margin: 0 5px;
     border-radius: 50%;
     background-color: #c4c4c4;
 }
@@ -74,10 +77,10 @@ section, div {
 
 .btn {
     display: inline-block;
-    padding: 10px 60px;
+    padding: 10px 30px;
     border-radius: 100em;
     background: transparent;
-    border: 2px solid white;
+    border: 3px solid white;
     color: white;
     transition: background-color .2s linear;
     font-family: 'Poppins', sans-serif;
@@ -93,6 +96,8 @@ section, div {
 
 .copyright {
     margin-top: auto;
+    font-size: 14px;
+    padding-bottom: 10px;
 }
 
 .info {
@@ -106,5 +111,9 @@ section, div {
 }
 
 .info__title {
-    font-size: 50px;
+    font-size: 60px;
+}
+
+.info__subtitle {
+    font-weight: normal;
 }
