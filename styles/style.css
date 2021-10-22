@@ -1,0 +1,133 @@
+body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 22px;
+    line-height: 25px;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.card {
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: #444444;
+    display: flex;
+    width: 1127px;
+    height: 595px;
+}
+
+.preview {
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.preview__image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-top: 70px;
+    -webkit-box-shadow: 5px 5px 2px 2px rgba(94, 94, 94, 1);
+    -moz-box-shadow: 5px 5px 2px 2px rgba(94, 94, 94, 1);
+    box-shadow: 5px 5px 2px 2px rgba(94, 94, 94, 1);
+}
+
+.preview__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.preview__header {
+    margin-top: 30px;
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 43px;
+}
+
+.preview__text {
+    font-size: 20px;
+    line-height: 23px;
+    margin-top: 8px;
+}
+
+.social {
+    margin-top: 16px;
+    display: flex;
+    width: 70%;
+    justify-content: center;
+}
+
+.social__item {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #c4c4c4;
+}
+
+.preview__button {
+    margin-top: 57px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 100em;
+    background: transparent;
+    border: 3px solid #fff;
+    color: white;
+    transition: background-color, color .2s linear;
+    font-size: 17px;
+    font-family: 'Helvetica', sans-serif;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.copyright {
+    margin-top: auto;
+    font-size: 14px;
+    line-height: 16px;
+    padding-bottom: 16px;
+}
+
+.info {
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    border-radius: 30px 0 0 30px;
+}
+
+.info__title {
+    font-size: 62px;
+    line-height: 71px;
+    font-weight: bold;
+}
+
+.info__subtitle {
+    font-weight: normal;
+    margin-top: 8px;
+}
