@@ -1,5 +1,16 @@
+.light-theme {
+    --dark-body: #fff;
+    --bg-button: #fff;
+    --button-color: rgb(80, 82, 110);
+    --input-bg-color: #fff;
+    --input-border-color: rgb(80, 82, 110);
+}
 .dark-theme {
     --dark-body: #303030;
+    --bg-button: rgb(39, 40, 42);
+    --button-color: rgb(186, 186, 202);
+    --input-bg-color: rgb(25, 26, 37);
+    --input-border-color: #fff;
 }
 
 body, h1, h2, h3, h4, h5, h6, p {
@@ -135,4 +146,57 @@ body {
 .card__info-subtitle {
     font-weight: normal;
     margin-top: 8px;
+}
+
+button {
+    background-color: var(--bg-button);
+    padding: 10px 30px;
+    border: none;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: var(--button-color);
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.theme-switcher {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+input {
+    width: 0;
+    height: 0;
+    display: none;
+    visibility: hidden;
+}
+label {
+    cursor: pointer;
+    display: block;
+    text-indent: -9999px;
+    height: 30px;
+    width: 60px;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s ease background-color;
+}
+label::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    background-color: rgb(46, 42, 68);
+    transition: 0.5s ease;
+}
+input:checked + label::after {
+    left: calc(100% - 25px);
+    background-color: aliceblue;
+}
+input + label {
+    background-color: var(--input-bg-color);
+    border: 2px solid var(--input-border-color);
 }
