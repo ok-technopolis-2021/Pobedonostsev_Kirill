@@ -1,5 +1,5 @@
-body {
-    --dark-theme: #303030;
+.dark-theme {
+    --dark-body: #303030;
 }
 
 body, h1, h2, h3, h4, h5, h6, p {
@@ -17,10 +17,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
-
-.body_dark {
-    background-color: var(--dark-theme);
+    background-color: var(--dark-body);
 }
 
 * {
