@@ -10,7 +10,7 @@ class SkillsHandler {
     }
 
     addSkill(skill) {
-        if (skill.ratio <= 100 && skill.ratio >= 0 && this.skills.length < 5) {
+        if (skill.ratio <= 100 && skill.ratio >= 0 && this.skills.length < 5 && skill.name) {
             this.skills.push(skill);
             this.createSkill(this.skills.length - 1);
         }
