@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- inject:css -->
+    <!-- endinject -->
+    <title>Portfolio</title>
+</head>
+<body class="light-theme">
+
+<svg style="display: none">
+    <symbol id="plus" viewBox="0 0 24 24">
+        <g data-name="Layer 2">
+            <g data-name="plus">
+                <path d="M19 11h-6V5a1 1 0 0 0-2 0v6H5a1 1 0 0 0 0 2h6v6a1 1 0 0 0 2 0v-6h6a1 1 0 0 0 0-2z"/>
+            </g>
+        </g>
+    </symbol>
+    <symbol id="minus" viewBox="0 0 24 24">
+        <g data-name="Layer 2">
+            <g data-name="minus">
+                <path d="M19 13H5a1 1 0 0 1 0-2h14a1 1 0 0 1 0 2z"/>
+            </g>
+        </g>
+    </symbol>
+</svg>
+
+<div class="theme-switcher">
+    <input type="checkbox" id="switcher">
+    <label for=switcher>switch</label>
+</div>
+<main class="card">
+    <section class="card__preview">
+        <img class="card__image" src="assets/img.png" alt="avatar">
+        <div class="card__inner">
+            <h3 class="card__preview-header">Alex Smith</h3>
+            <p class="card__preview-text">Web Designer</p>
+            <div class="social">
+                <div class="social__item"></div>
+                <div class="social__item"></div>
+                <div class="social__item"></div>
+            </div>
+            <button class="card__button btn">Download CV</button>
+        </div>
+        <footer class="copyright">&copy;2020 All right reserved.</footer>
+    </section>
+    <section class="card__info">
+        <div class="skills">
+            <div class="skills__title">
+                <h2 class="skills__header">Coding <span class="blue">Skills</span></h2>
+                <div class="skills__button" id="add-skill">
+                    <svg>
+                        <use xlink:href="#plus"></use>
+                    </svg>
+                </div>
+            </div>
+            <form class="skills__add-dialog hidden">
+                <input class="skills__input" type="text" placeholder="skill name">
+                <input class="skills__input" type="text" placeholder="skill ratio">
+                <input type="submit" class="hidden"/>
+            </form>
+            <div class="skills__content">
+            </div>
+        </div>
+    </section>
+</main>
+<!-- inject:js -->
+<!-- endinject -->
+</body>
+</html>
